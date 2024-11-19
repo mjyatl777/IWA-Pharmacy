@@ -1,4 +1,10 @@
 # Maven
+- task: FortifyOnDemandStatic@9
+  inputs:
+    FortifyProjects: '$(System.DefaultWorkingDirectory)'
+    ScanCentralLocation: '$(System.DefaultWorkingDirectory)'
+    EntitlementPreference: '2'
+    BuildType: 'none'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
